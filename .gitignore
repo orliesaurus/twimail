@@ -1,2 +1,3 @@
-vars.txt
+gmailvariables.py
 *.pyc
+.DS_Store

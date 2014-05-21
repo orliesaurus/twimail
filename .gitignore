@@ -1,8 +1,7 @@
-<<<<<<< HEAD
+
 gmailvariables.py
 *.pyc
 .DS_Store
-=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -56,5 +55,3 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
-
->>>>>>> f097ba013aa80f28fd7444f2da8a82766b00eb4f

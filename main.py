@@ -27,9 +27,8 @@ for unreadmail in unread:
         unreadmail.add_label("twilio-d")
         #only  give us the subject
         subject_array.append(unreadmail.subject)
-
+#Next bit ->
 #then we can send it to twilio who will then forward it to my email
-
 payload = {'From':'+441277424151','To':'+447895445918','Body':'hi'}
 print json.dumps(payload)
 r = requests.post(furl, data=json.dumps(payload))

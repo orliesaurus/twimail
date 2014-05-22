@@ -14,7 +14,8 @@ Simple right?
 #Cool I like the idea - What works?
 It works for GMail and Gmail business *only* for now.
 
-Once run the script or scheduled with cronjob like I do, it will  automatically check for fresh new emails. 
+Once you run the script or as part of scheduled  job with cronjob (like I do), it will  automatically check for fresh new emails.
+ 
 If succesful in finding fresh emails, it will email you a list of email subjects to ur given number in the ```main.py``` file.
 Once an email has been detected as "fresh" twimail will label it as dispatched by applying a tag to it.
 This way you don't get fresh new emails twice.

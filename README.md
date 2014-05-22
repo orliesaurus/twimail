@@ -15,7 +15,7 @@ Simple right?
 It works for GMail and Gmail business *only* for now.
 
 Once you run the script or as part of scheduled  job with cronjob (like I do), it will  automatically check for fresh new emails.
- 
+
 If succesful in finding fresh emails, it will email you a list of email subjects to ur given number in the ```main.py``` file.
 Once an email has been detected as "fresh" twimail will label it as dispatched by applying a tag to it.
 This way you don't get fresh new emails twice.
@@ -31,6 +31,10 @@ Retrieve the text body of an email through SMS by giving an index to each email'
 #Why this?
 Sometimes you're in a different country with no wi-fi for a few hours or days and you still want to see if there are any crucial emails that you want to inspect
 
+#Help I'm stuck -OR- Hey I wanna help
+Cool thanks for stopping by: open an issue or send a pull request! 
+
+*made with <3 by orliesaurus*
 
 
 

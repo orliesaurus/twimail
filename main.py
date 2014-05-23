@@ -6,7 +6,7 @@ from gmailvariables import *
 #login into gmail with a user and a password
 g = gmail.login(mylogin, mypass)
 #ready the payload
-payload = {'From': '+441277424151', 'To': '+447895445918'}
+
 #set the filter/flag on all unread emails
 unread = g.inbox().mail(unread=True)
 # Iterate through all unread emails IDs
@@ -33,7 +33,7 @@ def read_email():
 #Concatanate the email subjects with this "-" char
 def concat_array(array):
     return "Subjects: " + " | ".join(array)
-    
+
 
 #uplifting this function to chunk into SMS size the message.
 def chunks(l, n):
@@ -41,16 +41,15 @@ def chunks(l, n):
         yield l[i:i+n]
 
 
-#this function looks for unread emails
+#hold the emails in a subj array
 subj = read_email()
+#use this function to format subjects
 mypayload = concat_array(subj)
+#send enough sms based on 140 char limit
 sms_text = chunks(mypayload, 140)
 
 for i in sms_text:
     payload['Body'] = i
-    #Next bit ->
     #then we can send it to twilio who will then forward it to my email
     #so let's prepare a payload and send it to twilio!
     r = requests.post(furl, data=payload)
-
-#print r.text
